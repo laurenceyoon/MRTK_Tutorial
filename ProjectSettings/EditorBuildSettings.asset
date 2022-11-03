@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: d4000df18bc6e0e43839fabebd646c48
+  - enabled: 1
+    path: Assets/Scenes/MRScoreFollower.unity
+    guid: 43f4f002aa3f0604ab829dd9127a4689
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d683c352053c1844c9d3200788c2a9e3, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 1994ecedb07c96c40bad7772eaca47c3, type: 2}
