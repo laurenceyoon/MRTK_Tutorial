@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ProgressManager : MonoBehaviour
 {
     public float progress = 0f;
+    private float threshold = 80f;
 
     [SerializeField]
     Text progressUI;
@@ -19,7 +20,7 @@ public class ProgressManager : MonoBehaviour
         Debug.Log(progress);
         progressUI.text = "Progress : " + progress.ToString();
 
-        index = (int) value / 10;
+        //index = (int) value;
 
         setScore();
     }
@@ -36,17 +37,24 @@ public class ProgressManager : MonoBehaviour
     void setScore()
     {
         Debug.Log(index.ToString() + progress.ToString());
-        //print(index);
-        for (int i=0; i < scoreList.Length; i++)
+        if (progress > threshold)
         {
-            if (i == index)
-            {
-                scoreList[i].SetActive(true);
-            }
-            else
-            {
-                scoreList[i].SetActive(false);
-            }
-        }   
+            scoreList[1].SetActive(true);
+        }
+        else
+        {
+            scoreList[1].SetActive(false);
+        }
+        //for (int i=0; i < scoreList.Length; i++)
+        //{
+        //    if (i == index)
+        //    {
+        //        scoreList[i].SetActive(true);
+        //    }
+        //    else
+        //    {
+        //        scoreList[i].SetActive(false);
+        //    }
+        //}   
     }
 }
