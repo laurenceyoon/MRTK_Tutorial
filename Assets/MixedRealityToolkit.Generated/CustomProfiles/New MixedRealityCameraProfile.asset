@@ -44,11 +44,11 @@ MonoBehaviour:
     settingsProfile: {fileID: 11400000, guid: 8bf955d6b5fb82e47acbc25a9152f832, type: 2}
   nearClipPlaneOpaqueDisplay: 0.1
   farClipPlaneOpaqueDisplay: 1000
-  cameraClearFlagsOpaqueDisplay: 4
+  cameraClearFlagsOpaqueDisplay: 1
   backgroundColorOpaqueDisplay: {r: 0, g: 0, b: 0, a: 1}
   opaqueQualityLevel: 5
   nearClipPlaneTransparentDisplay: 0.1
   farClipPlaneTransparentDisplay: 50
-  cameraClearFlagsTransparentDisplay: 4
+  cameraClearFlagsTransparentDisplay: 1
   backgroundColorTransparentDisplay: {r: 0, g: 0, b: 0, a: 0}
   transparentQualityLevel: 0
